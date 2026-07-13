@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "idleDefault":           { "type": "integer", "minimum": 10, "maximum": 3600,
+                               "description": "Default auto-snooze idle threshold, in seconds (full build)." },
+    "socialEnabled":         { "type": "boolean",
+                               "description": "Force the screen-time timer on/off (full build)." },
+    "socialDomains":         { "type": "array", "items": { "type": "string" },
+                               "description": "Preset list of sites the screen-time timer counts (full build)." },
+    "safeHoldEngageStartup": { "type": "boolean",
+                               "description": "Engage Safe-Hold automatically at startup (full build)." },
+    "requireVpn":            { "type": "boolean",
+                               "description": "Require manual VPN confirmation before traffic resumes (full build)." },
+    "holdPrevSession":       { "type": "boolean",
+                               "description": "Hold previous-session tabs until reviewed (full build)." },
+    "shStartup":             { "type": "boolean",
+                               "description": "Lite/HiberSpace: engage Safe-Hold automatically at startup." },
+    "shRequireVpn":          { "type": "boolean",
+                               "description": "Lite/HiberSpace: require manual VPN confirmation before resume." },
+    "lockSettings":          { "type": "boolean",
+                               "description": "If true, users cannot change any admin-set value (controls are shown but disabled)." },
+    "securityReportingEndpoint": { "type": "string",
+                               "description": "OPTIONAL https URL to POST security alerts to. Off unless set AND the reporting-enabled manifest (whose CSP/host_permissions allow this endpoint) is deployed. Leave empty for local export only." }
+  }
+}

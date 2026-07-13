@@ -1,0 +1,25 @@
+{
+  "policies": {
+    "ExtensionSettings": {
+      "hibern8@wildheartholdingsllc.com": {
+        "installation_mode": "force_installed",
+        "install_url": "https://YOUR-HOST/hibern8-ctrlspace-firefox.xpi"
+      }
+    },
+    "3rdparty": {
+      "Extensions": {
+        "hibern8@wildheartholdingsllc.com": {
+          "idleDefault": 60,
+          "safeHoldEngageStartup": true,
+          "requireVpn": true,
+          "socialEnabled": false,
+          "socialDomains": [],
+          "shStartup": true,
+          "shRequireVpn": true,
+          "lockSettings": true,
+          "securityReportingEndpoint": ""
+        }
+      }
+    }
+  }
+}
